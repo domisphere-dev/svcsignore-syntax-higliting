@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "SVCS Ignore",
+  "scopeName": "text.svcsignore",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#negation" },
+    { "include": "#pattern" }
+  ],
+  "repository": {
+    "comment": {
+      "name": "comment.line.number-sign.svcsignore",
+      "match": "^(?:\\s*)(?<!\\\\)#.*$"
+    },
+
+    "negation": {
+      "patterns": [
+        {
+          "name": "meta.negation.rule.svcsignore",
+          "match": "^(\\s*)(!)(.*)$",
+          "captures": {
+            "1": { "name": "punctuation.whitespace.leading.svcsignore" },
+            "2": { "name": "keyword.operator.negation.svcsignore" },
+            "3": { "name": "string.unquoted.pattern.svcsignore" }
+          }
+        }
+      ]
+    },
+
+    "pattern": {
+      "patterns": [
+        {
+          "name": "meta.rule.svcsignore",
+          "match": "^(\\s*)(?!#)(.*?)(/?)\\s*$",
+          "captures": {
+            "1": { "name": "punctuation.whitespace.leading.svcsignore" },
+            "2": { "name": "string.unquoted.pattern.svcsignore" },
+            "3": { "name": "punctuation.definition.directory.svcsignore" }
+          }
+        },
+        {
+          "name": "constant.character.escape.svcsignore",
+          "match": "^(\\s*)\\\\([#!])",
+          "captures": {
+            "1": { "name": "punctuation.whitespace.leading.svcsignore" },
+            "2": { "name": "constant.character.escape.svcsignore" }
+          }
+        }
+      ]
+    }
+  }
+}

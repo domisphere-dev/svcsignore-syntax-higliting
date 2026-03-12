@@ -1,0 +1,28 @@
+{
+  "name": "svcsignore-syntax",
+  "displayName": "SVCS Ignore Syntax",
+  "description": "Syntax highlighting for .svcsignore files",
+  "version": "1.0.0",
+  "publisher": "domisphere-dev",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "svcsignore",
+        "aliases": ["SVCS Ignore", "svcsignore"],
+        "filenames": [".svcsignore"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "svcsignore",
+        "scopeName": "text.svcsignore",
+        "path": "./syntaxes/svcsignore.tmLanguage.json"
+      }
+    ]
+  }
+}
