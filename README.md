@@ -64,7 +64,7 @@ dist/
 ```bash
 npm i -g @vscode/vsce
 vsce package
-code --install-extension svcsignore-0.0.1.vsix
+code --install-extension svcsignore-1.0.0.vsix
 ```
 
 Reload VS Code and enjoy your freshly highlighted ignoring.
