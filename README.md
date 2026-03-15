@@ -1,6 +1,6 @@
 # SVCS Ignore (VS Code Extension)
 
-The Simple Version Control System’s *Simple* Ignore file… now with *Simple* colors.
+The Simple Version Control System's *Simple* Ignore file... now with *Simple* colors.
 
 This extension teaches VS Code how to read **`.svcsignore`** files without squinting, by giving them syntax highlighting with the **same vibes as `.gitignore`**.
 
@@ -25,11 +25,11 @@ This extension restores balance.
 - Highlights **comments** (`# like this`)
 - Highlights **negation rules** (`!not-this-one`)
 - Highlights **directory patterns** (`build/`)
-- Understands “no really, I meant a literal `#` or `!`” via escaping:
+- Understands "no really, I meant a literal `#` or `!`" via escaping:
   - `\#not-a-comment`
   - `\!not-negation`
 
-No AI. No blockchain. No telemetry. No “sign in to continue ignoring files”.
+No AI. No blockchain. No telemetry. No "sign in to continue ignoring files".
 
 Just colors.
 
@@ -81,13 +81,13 @@ Also: if you rename everything to `.gitignore`, at some point Git will show up a
 
 ## Known limitations
 
-This is regex-based highlighting (TextMate grammar). It’s designed to be practical and readable, not a perfect reimplementation of every obscure edge-case in ignore-file lore.
+This is regex-based highlighting (TextMate grammar). It's designed to be practical and readable, not a perfect reimplementation of every obscure edge-case in ignore-file lore.
 
 If you find a line that looks wrong, open an issue (or send a PR) with:
 - the exact `.svcsignore` line
 - what you expected to see
 - what you actually saw
-- your theme name (some themes are… expressive)
+- your theme name (some themes are... expressive)
 
 ---
 
@@ -95,4 +95,4 @@ If you find a line that looks wrong, open an issue (or send a PR) with:
 
 MIT, just like always, plus the ancient universal license of:
 
-> "Please don’t make me debug your theme’s neon orange."
+> "Please don't make me debug your theme's neon orange."
